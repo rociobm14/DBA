@@ -10,10 +10,12 @@ import jade.core.Profile;
 import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
 import java.util.Scanner;
+
 /**
- *
- * @author rorris
+ * @author Rocío Barragán Moreno
+ * @description menú switch creado para elegir qué agente se va a ejecutar.
  */
+
 public class main {
 
     /**
@@ -69,8 +71,7 @@ public class main {
                 }
                 
                 break;
-                
-                
+                 
             case 4:
                 try {
                     AgentController ac = cc.createNewAgent("rociobarragan", Ejercicio4.class.getCanonicalName(), null);
@@ -84,13 +85,8 @@ public class main {
                 break;
                 
             default:
-                System.out.println("No existe ese agente");
-                
-                
+                System.out.println("No existe ese agente");        
         }
-        
- 
-        
-      }
-      
+       
+    } 
 }

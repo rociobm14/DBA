@@ -7,18 +7,18 @@ package practica1_dba;
 import jade.core.Agent;
 import jade.core.behaviours.OneShotBehaviour;
 
-
 /**
- *
  * @author Rocío Barragán Moreno
  * @description Crear un Agente usando comportamientos que muestre un mensaje por consola una única
 vez.
  */
+
 public class Ejercicio2 extends Agent{
     
     @Override
     public void setup(){
-        System.out.println("\nAgente que use comportamientos con mensaje una única vez\n");
+        System.out.println("\n-----------Agente que use comportamientos con "
+                + "mensaje una única vez-----------\n");
         addBehaviour(new MyBehaviour());
     }
     
@@ -34,7 +34,6 @@ public class Ejercicio2 extends Agent{
     
     @Override 
     public void takeDown(){
-        
         System.out.println("Terminating agent...");
     }
     
