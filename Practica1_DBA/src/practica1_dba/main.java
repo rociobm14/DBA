@@ -9,6 +9,7 @@ import jade.core.ProfileImpl;
 import jade.core.Profile;
 import jade.wrapper.AgentController;
 import jade.wrapper.ContainerController;
+import java.util.Scanner;
 /**
  *
  * @author rorris
@@ -26,14 +27,68 @@ public class main {
         
         ContainerController cc = rt.createAgentContainer(p);
         
-        try {
-            AgentController ac = cc.createNewAgent("rociobarragan", Ejercicio4.class.getCanonicalName(), null);
-            ac.start();
-        } 
+        Scanner scanner = new Scanner(System.in);
         
-        catch (Exception ex) {
-            ex.printStackTrace();
+        System.out.println("Introduzca el agente que se quiere ejecutar");
+        
+        int agente = scanner.nextInt();
+        
+        switch(agente){
+            case 1:
+                try {
+                    AgentController ac = cc.createNewAgent("rociobarragan", Ejercicio1.class.getCanonicalName(), null);
+                    ac.start();
+                } 
+        
+                catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+                
+                break;
+                
+            case 2:
+                try {
+                    AgentController ac = cc.createNewAgent("rociobarragan", Ejercicio2.class.getCanonicalName(), null);
+                    ac.start();
+                } 
+        
+                catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+                
+                break;
+                
+            case 3:
+                try {
+                    AgentController ac = cc.createNewAgent("rociobarragan", Ejercicio3.class.getCanonicalName(), null);
+                    ac.start();
+                } 
+        
+                catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+                
+                break;
+                
+                
+            case 4:
+                try {
+                    AgentController ac = cc.createNewAgent("rociobarragan", Ejercicio4.class.getCanonicalName(), null);
+                    ac.start();
+                } 
+        
+                catch (Exception ex) {
+                    ex.printStackTrace();
+                }
+                
+                break;
+                
+            default:
+                System.out.println("No existe ese agente");
+                
+                
         }
+        
  
         
       }
