@@ -27,31 +27,14 @@ public class main {
         ContainerController cc = rt.createAgentContainer(p);
         
         try {
-            AgentController ac = cc.createNewAgent("rociobarragan", Ejercicio1.class.getCanonicalName(), null);
+            AgentController ac = cc.createNewAgent("rociobarragan", Ejercicio4.class.getCanonicalName(), null);
             ac.start();
         } 
         
         catch (Exception ex) {
             ex.printStackTrace();
         }
-        
-        try {
-            AgentController ac = cc.createNewAgent("rociobarragan", Ejercicio2.class.getCanonicalName(), null);
-            ac.start();
-        } 
-        
-        catch (Exception ex) {
-            ex.printStackTrace();
-        }
-        
-         try {
-            AgentController ac = cc.createNewAgent("rociobarragan", Ejercicio3.class.getCanonicalName(), null);
-            ac.start();
-        } 
-        
-        catch (Exception ex) {
-            ex.printStackTrace();
-        }
+ 
         
       }
       
