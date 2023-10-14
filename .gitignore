@@ -1,5 +1,3 @@
-# Igonre nbproject
-nbproject/
-
-# Ignore dist
 dist/
+nbproject/
+build/
